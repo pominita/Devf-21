@@ -1,0 +1,120 @@
+
+body{
+    background-color: white;
+}
+.fila {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap:1em; 
+ 
+  
+}
+.item {
+ display: inline-block;
+ padding:  .25rem;
+ width:  100%; 
+
+}
+.well {
+ position:relative;
+ display: block;
+}
+.txtBuscar{
+    min-width: 100%;
+}
+.imagen{
+    width: 18em;
+}
+
+
+/* menu */
+header{
+    background: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.logo img
+{
+  width:30px;
+}
+
+li.search, input {
+    width: 200px;
+    flex-grow: 1;
+    overflow-x: hidden;
+    border-radius: 4px;
+}
+input {
+    width: 100%;
+    background-color: #dfdfdf;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+}
+input[placeholder="Buscar"] {
+    font-size: 16px;
+    color: #9c9b9b;
+    font-weight: 700;
+}
+li {
+    margin: auto 5px;
+    justify-content: flex-end;
+}
+i.icono {
+    font-size: 23px;
+    color: #9c9b9b;
+}
+
+
+/* responsive */
+.inicio{
+    display: none;
+}
+.search_icono{
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tendencia{
+        display: none;
+    }
+    .inicio{
+        display: block;
+    }
+}
+@media screen and (max-width: 568px) {
+    .search_icono{
+        display: block;
+    }
+    .search{
+        display: none;
+    }
+}
+
+.linkInicio{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav-link{
+    color: black;
+}
+.btn-dark{
+    border-radius: 40px;
+    font-size: 16px;
+}
+  
+  .modal-dialog-centered{
+    align-items: center;
+    justify-content: center;
+  }
+  .card, .card-img-top, .img-fluid {
+    border-radius: 1.5rem !important;
+  }
+
